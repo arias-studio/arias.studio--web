@@ -1,0 +1,29 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				details
+					summary.f-l.fw-b
+						p.f-l.fw-b PATRIA SIMULADA
+					.summary__statement
+						p PATRIA SIMULADA es un cover del himno nacional interpretado por una voz robot con pronunciación y acento inglés. La pieza apunta a reflexionar sobre el impacto de la globalización y la tecnología en las democracias, señalando una extraña pero evidente similitud entre los sucesos del Brexit en el Reino Unido, la elección de Donald Trump en los Estados Unidos y el triunfo No en el plebiscito por la paz en Colombia. En este último evento el electorado nacional, sin saberlo,  era víctima de manipulación al igual que sus pares del llamado «primer mundo», aunque en distintas direcciones: allá, para frenar la migración, y acá, para perpetuar la guerra. La élite colombiana, que está a los pies de la anglosajona, imita las formas de dominación de esta, perpetuando el ciclo de dominación a un nivel más bajo. La ironía neocolonial resulta monumental.
+						
+						.summary__info--detail
+							+summary__info--detail('2019', 'AUDIO REMEZCLADO', 'VOZ ALGORÍTMICA, HIMNO NACIONAL', '2:24 min')
+
+				+main__img('patria_1', '1920', '1280')
+				.main__video
+						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/737983713?h=bc33427169&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Patria Simulada"></iframe></div>
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+	//----------------------------------------
+	include __import-js.pug

@@ -1,0 +1,35 @@
+nav.sidebar
+	.sidebar__item.logo--height
+		.sidebar__item--l
+			a(href='index.html')
+				h5 ( ESP )
+		.sidebar__item__logo
+			h1#logo CRISTIAN ARIAS
+			.sidebar__item__logo--menu
+				.sidebar__item__logo--menu
+					a(href='news.html')
+						h4 NOTICIAS
+					a(href='research.html').html
+						h4 INVESTIGACIÓN
+					a(href='info.html')
+						h4 INFO
+		.sidebar__item--r
+			a(href='index--en.html')
+				h5 ( ENG )
+
+	+sidebar__item('video', 'slamming brutal death army', '2021', 'slamming')
+	+sidebar__item('video', 'Ciudad Serpiente', '2021', 'serpiente')
+	+sidebar__item('video algorítmico', 'Natural Born Glitcher', '2021', 'glitcher')
+	+sidebar__item('instalación', 'BEFO®', '2021', 'befo')
+	+sidebar__item('taller + video', 'Carbono14', '2020', 'carbono')
+	+sidebar__item('audio', 'Patria Simulada', '2019', 'patria')
+	+sidebar__item('website', 'Los Ahogados Más Hermosos del Mundo', '2019', 'ahogados')
+	+sidebar__item('video', 'Desarrollo', '2019', 'desarrollo')
+
+	a.sidebar__item(href='mailto:cristian@arias.studio')
+		.sidebar__item--l
+			h1 →
+		.sidebar__item--c
+			h2.fw-b.lowercase cristian@arias.studio
+		.sidebar__item--r
+			h1 ←

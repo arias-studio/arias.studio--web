@@ -1,0 +1,37 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar--en.pug
+			
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				details
+					summary.f-l.fw-b
+						p.f-l.fw-b LOS AHOGADOS MÁS HERMOSOS DEL MUNDO
+					.summary__statement
+						p LOS AHOGADOS MÁS HERMOSOS DEL MUNDO is a reactive website where the public can interact with Catholic statues submerged in rivers, through the movement of the pointer. His name makes a nod to the story "The most beautiful drowned in the world" by Gabriel García Márquez, to point out the existence of empty signs, which serve to justify what is wanted; any action or omission, even if these go against dogmas. In the Colombian context the river has been used to wash away sins; the river takes in its path not only the faults but also the traces of the conflict, the bodies, while most of the time it is found through a screen.
+						
+						.summary__info--detail
+							+summary__info--detail--en('2019', 'WEBSITE', 'CUSTOM SOFTWARE, SERVER', 'VARIABLE')
+
+				+main__img('ahogados_1', '1920', '1280')
+				a(href='https://losahogados.arias.studio/', target='_blank')
+					h3.pb-1 view live website ↗
+				+main__img('ahogados_2', '1920', '1280')
+				+main__img('ahogados_3', '1920', '1280')
+				+main__img('ahogados_4', '1920', '1280')
+				+main__img('ahogados_5', '1920', '1280')
+
+				.main__video
+						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/742891653?h=fa6036cd1b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Los Ahogados Más Hermosos del Mundo.mov"></iframe></div>
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug

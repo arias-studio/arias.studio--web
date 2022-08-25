@@ -1,0 +1,48 @@
+//---0 889------------------------------
+@media(max-width: 889px)
+	.main
+		order 1
+	.sidebar
+		order 2
+	.sidebar, .main
+		overflow visible
+	.main img, .main__video
+		margin $u 0
+	.main__video
+		margin-bottom $u-2x
+	.summary__statement
+		grid-template-columns 1fr
+		gap $u
+	details
+		margin-bottom $u-2x
+	.info__item--text
+		width 100%
+//---890 1023---------------------------
+@media(min-width: 890px)
+	.wrapper
+		grid-template-columns minmax(400px, 25vw) 1fr
+	.wrapper__index
+		grid-template-columns 1fr
+	.sidebar, .main
+		margin 0 $u-3x
+	.main
+		padding 0 0 $u-3x 0
+	.main img, .main__video
+		margin $u-3x 0
+	.marquee
+		display none
+	.summary__statement
+			grid-template-columns 60% 1fr
+			gap $u-2x
+	.info__item--text
+		max-width 80%
+//---1024 1339---------------------------
+@media(min-width: 1024px)
+	.wrapper
+		grid-template-columns minmax(400px, 25vw) 1fr
+	.info__item--text
+		max-width 60%
+//---0 889------------------------------
+@media(min-width: 1440px)
+	.wrapper
+		grid-template-columns minmax(400px, 25vw) 1fr

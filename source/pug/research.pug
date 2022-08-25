@@ -1,0 +1,45 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				.news__item
+					h2 INVESTIGACIÓN 
+
+				.news__item
+					a.f-l.fw-b(href="https://www.are.na/cristian-arias/", target='_blank')
+						h2 REFERENCIAS
+						p are.na↗
+
+				.news__item
+					a.f-l.fw-b(href="docs/liveCinemaVJing_Arias_2022.pdf", target='_blank')
+						h2 Arte & Diseño: una distinción entre Live Cinema y VJing
+						p Texto corto. 2022.
+
+				.news__item
+					a.f-l.fw-b(href="docs/casoIndaplant_Arias_2022.pdf", target='_blank')
+						h2 The IndaPlant Community: una aproximación a los ciberbiomas
+						p Texto corto. 2022.
+
+				.news__item
+					a.f-l.fw-b(href="docs/contraModeloT_Arias_2022.pdf", target='_blank')
+						h2 Artes y Ciencias: una apuesta contra el modelo T de Ford
+						p Texto corto. 2022.
+
+				.news__item
+					a.f-l.fw-b(href="http://www.medialab.unal.edu.co/medialab/textos/JulianaBermudez.pdf", target='_blank')
+						h2 ARCHIVO FOTOGRÁFICO DE MOSQUERA
+						p Trabajo de grado de diseño gráfico. 2018.
+
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug

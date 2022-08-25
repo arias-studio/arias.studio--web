@@ -1,0 +1,38 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				.news__item
+					h2 INFORMACIÓN
+
+				.info__item
+					h2 STATEMENT
+					.info__item--text
+						p El trabajo de Cristian Arias se enfoca en la manipulación crítica de interfaces, donde la interacción humano-máquina se plantea como escenario de disputa y fricción ideológica. Producto de ello genera, principalmente, artefactos digitales en el tiempo: sitios web, videos e instalaciones; que evidencian las formas contemporáneas del ejercicio del poder, la imposición de identidad y la incidencia de la tecnología en esta.
+				.info__item
+					h2 BIO
+					.info__item--text
+						p Arias tiene un pregrado en Diseño Gráfico de la Universidad Nacional de Colombia, ganador del premio Mejores Trabajos de Grado de Pregrado Versión XXVII de la misma universidad. Cursa actualmente el Máster en Artes Visuales y Multimedia en la Universidad Politécnica de Valencia. Ha participado en programas de educación no formal como ARTBO TUTOR y Programa de Formación Artística del MAMBO. Adelantó estudios en ingeniería electrónica, aprobando cinco semestres, en la Universidad Distrital Francisco José de Caldas. Ha participado en exposiciones como Diaporama, Panorama 5 del ciclo ARTBO y 1º Salón Nacional de Arte Universitario, Programa la Plaza del Medialab Prado y Artecámara de ARTBO 2021.
+
+				.info__item
+					a.f-xl.fw-b(href="mailto:cristian@arias.studio") cristian@arias.studio
+
+				.info__item
+					a.f-l.fw-b(href='docs/arias_cv.pdf', target='_blank') DESCARGAR CV↗
+
+				.info__item
+					a.f-l.fw-b(href='docs/arias_portfolio.pdf', target='_blank') DESCARGAR PORTAFOLIO↗
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug

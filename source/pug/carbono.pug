@@ -1,0 +1,35 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				details
+					summary.f-l.fw-b
+						p.f-l.fw-b CARBONO14
+					.summary__statement
+						p «CARBONO14 o C-14, un grupo ecologista radical consciente y cansado de que las medidas para frenar el cambio climático no se den a la velocidad que la situación lo demanda, e inspiradxs en la toma del Palacio de Justicia por parte del M-19 en 1985, han decidido tomarse la Casa de Nariño para instaurar un gobierno ecologista»; bajo este argumento se realizó una convocatoria pública para personas de diferentes disciplinas, con las que se llevó a cabo un laboratorio para definir el guión conjuntamente. Esta pieza fue rodada en ESPACIO ODEÓN en el marco de QUE NO CUNDA  EL PÁNICO (¿HAY OTRAS MANERAS?).
+						
+						.summary__info--detail
+							+summary__info--detail('2020', 'TALLER + VIDEO', 'VIDEO MONOCANAL, PANTALLA', 'HD, 10:06 min')
+
+				+main__img('carbono_1', '1428', '804')
+				+main__img('carbono_2', '1428', '804')
+				+main__img('carbono_3', '1428', '804')
+				+main__img('carbono_4', '1428', '804')
+				+main__img('carbono_5', '1428', '804')
+				
+				.main__video
+						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/738050225?h=37fd47aef2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="CARBONO14.mp4"></iframe></div>
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug

@@ -1,0 +1,13 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper__index
+			include __sidebar--en.pug
+
+	//----------------------------------------
+	include __import-js.pug

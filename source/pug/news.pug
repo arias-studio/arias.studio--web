@@ -1,0 +1,59 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			main.main(data-barba="container", data-barba-namespace="home")
+
+				.news__item
+					h2 NOTICIAS
+
+				.news__item
+					a.f-l.fw-b(href="https://www.artbo.co/semanaartbo/Artecamara", target='_blank')
+						h2 ARTECÁMARA 2021
+						p ( EXHIBICIÓN ) 25-09-2021 → 09-10-2021. GALERÍA SANTAFÉ BOGOTÁ, COLOMBIA.
+
+				.news__item
+					a.f-l.fw-b(href="https://saladeproyectos.uniandes.edu.co/la-vitrina/cristian-arias-befo/", target='_blank')
+						h2 BEFO®
+						p ( EXHIBICIÓN ) 11-08-2021 → 01-09-2021. UNIVERSIDAD DE LOS ANDES. BOGOTÁ, COLOMBIA. 
+
+				.news__item
+					a.f-l.fw-b(href="https://www.instagram.com/p/CQ05OF8pzTS/", target='_blank')
+						h2 ENCUENTROS EN MARTE
+						p ( EXHIBICIÓN ) 08-07-2021 → 31-07-2021. GALERÍA MARTE247. BOGOTÁ, COLOMBIA.
+
+				.news__item
+					a.f-l.fw-b(href="http://vartexmedellin.co/v9/", target='_blank')
+						h2 VARTEX 9 MUESTRA DE VIDEO & EXPERIMENTAL
+						p ( PROYECCIÓN ) 23-06-2021 → 26-06-2021. MEDELÍN, COLOMBIA.
+
+				.news__item
+					a.f-l.fw-b(href="https://mmmad.art/Edicion-Madrid-2021", target='_blank')
+						h2 MMMAD FESTIVAL 2021
+						p ( PROYECCIÓN ) 01-05-2021 → 31-05-2021. MEDIALAB PRADO. MADRID, ESPAÑA.
+
+				.news__item
+					a.f-l.fw-b(href="https://culturabbaa.webs.upv.es/archivos/4806", target='_blank')
+						h2 SHORT PAM! 21
+						p ( PROYECCIÓN ) 24-05-2021 → 28-05-2021. FILMOTECA VALENCIA. VALENCIA, ESPAÑA.
+
+				.news__item
+					a.f-l.fw-b(href="https://vafaenza.com/", target='_blank')
+						h2 III MUESTRA VIDEOARTE FAENZA
+						p ( PROYECCIÓN ) 20-05-2021 → 30-05-2021. TEATRO JORGE ELIÉCER GAITÁN. BOGOTÁ, COLOMBIA.
+
+				.news__item
+					a.f-l.fw-b(href="https://espacioodeon.com/wp-content/uploads/2020/01/O_hoja_sala_4_arte.pdf", target='_blank')
+						h2 QUE NO CUNDA EL PÁNICO (¿HAY OTRAS MANERAS?
+						p ( EXHIBICIÓN ) 15-01-2020 → 29-02-2020. ESPACIO ODEÓN. BOGOTÁ, COLOMBIA.
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug

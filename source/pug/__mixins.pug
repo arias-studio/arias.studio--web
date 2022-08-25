@@ -1,0 +1,71 @@
+//---------------------------------------
+mixin sidebar__item(technique, name, year, img)
+	a.sidebar__item(href=img+'.html')
+		.sidebar__item--l
+			h5=technique
+		.sidebar__item--c
+			.sidebar_item--img
+				picture#img--hide
+					source(srcset='/img/'+img+'_0.avif', type='image/avif')
+					source(srcset='/img/'+img+'_0.webp', type='image/webp')
+					source(srcset='/img/'+img+'_0.jpg', type='image/jpg')
+					img(src='/img/'+img+'_0.webp', alt=name)
+			h2=name
+		.sidebar__item--r
+			h5=year
+//---------------------------------------
+mixin sidebar__item--en(technique, name, year, img)
+	a.sidebar__item(href=img+'--en.html')
+		.sidebar__item--l
+			h5=technique
+		.sidebar__item--c
+			.sidebar_item--img
+				picture#img--hide
+					source(srcset='/img/'+img+'_0.avif', type='image/avif')
+					source(srcset='/img/'+img+'_0.webp', type='image/webp')
+					source(srcset='/img/'+img+'_0.jpg', type='image/jpg')
+					img(src='/img/'+img+'_0.webp', alt=name)
+			h2=name
+		.sidebar__item--r
+			h5=year
+//---------------------------------------
+mixin main__img(img, width, height)
+	picture
+
+		source(srcset='/img/'+img+'--1080.avif', type='image/avif', media='(max-width:889px)',width=width, height=height)
+		source(srcset='/img/'+img+'--1920.avif', type='image/avif', media='(min-width:890px)',width=width, height=height)
+
+		source(srcset='/img/'+img+'--1080.webp', type='image/webp', media='(max-width:889px)',width=width, height=height)
+		source(srcset='/img/'+img+'--1920.webp', type='image/webp', media='(min-width:890px)',width=width, height=height)
+
+		source(srcset='/img/'+img+'--1080.jpg', type='image/jpg', media='(max-width:889px)',width=width, height=height)
+		source(srcset='/img/'+img+'--1920.jpg', type='image/jpg', media='(min-width:890px)',width=width, height=height)
+
+		img(src='/img/'+img+'--1920.webp', alt="image", style='width:100%; height:auto;')
+//---------------------------------------
+mixin marquee(text)
+	.marquee
+		.track
+			.content
+				h1.c-d=text
+//---------------------------------------
+mixin summary__info--detail(year, technique, materials, dimensions)
+	p.pb año: 
+		span=year
+	p.pb técnica: 
+		span=technique
+	p.pb materiales: 
+		span=materials
+	p.pb dimensiones: 
+		span=dimensions
+//---------------------------------------
+mixin summary__info--detail--en(year, technique, materials, dimensions)
+	p.pb year: 
+		span=year
+	p.pb technique: 
+		span=technique
+	p.pb materials: 
+		span=materials
+	p.pb dimensions: 
+		span=dimensions
+//---------------------------------------

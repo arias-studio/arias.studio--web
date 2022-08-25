@@ -1,0 +1,188 @@
+@import 'var'
+//---GENERAL-------------------------------
+*
+	margin 0
+	padding 0
+	border 0
+	box-sizing border-box
+	-webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+	text-rendering auto
+	overflow-x hidden
+	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
+	text-rendering optimizeLegibility
+body
+	font-family ff
+	font-feature-settings 'ss01'
+ul
+	list-style none
+a:link, a:visited, a:active
+	text-decoration none
+a
+	color $c-m
+a:hover
+	color $c-d
+	transition $t
+::-webkit-scrollbar
+	width: 0px
+	background transparent
+	scrollbar-width: none
+	-ms-overflow-style: none
+::-moz-selection
+	background-color white
+	color none
+::selection 
+	background-color white
+	color none
+::-webkit-selection
+	background-color white
+	color none
+//---TYPE---------------------------------
+h1, h2, h3, h4, h5
+	line-height 100%
+	text-transform uppercase
+h1
+	font-size $f-xl
+	font-weight $fw-b
+h2
+	font-size $f-l
+	font-weight $fw-b
+	letter-spacing -.5px
+h3
+	font-size $f-m
+p
+	font-size $f-m
+	font-weight $fw-r
+h4
+	font-size $f-s
+	font-weight $fw-b
+h5
+	font-size $f-xs
+	font-weight $fw-b
+
+//---WRAPPER------------------------------
+.wrapper, .wrapper__index
+	display grid
+	height 100vh
+	margin 0 $u-3x
+//---SIDEBAR------------------------------
+.sidebar
+	overflow scroll
+.sidebar__item
+	position relative
+	display grid
+	grid-template-columns 20% 1fr 20%
+	gap $u-2x
+	height $u-18x
+	border-bottom solid 1px $c-m
+	line-height 100%
+.sidebar__item:hover
+	#img--hide
+		visibility visible
+		opacity 1
+#img--hide
+	visibility hidden
+	opacity 0
+	transition $t
+.sidebar__item--l, .sidebar__item--c, .sidebar__item--r
+	display flex
+	align-items center
+	text-transform uppercase
+.sidebar__item--l
+	display flex
+	text-align left
+	justify-content flex-start
+.sidebar__item--c
+	position relative
+	display flex
+	text-align center
+	justify-content center
+.sidebar__item--r
+	display flex
+	text-align right
+	justify-content flex-end
+.sidebar_item--img
+	position absolute
+.sidebar_item--img img
+	height 135px
+.sidebar__item__logo
+	display flex
+	flex-direction column
+	text-align center
+	align-items center
+	justify-content center
+.sidebar__item__logo--menu
+	display flex
+	gap $u-2x
+#logo
+	display block
+	text-decoration line-through
+	text-decoration-thickness 4px
+	width 100%
+	margin-bottom 4px
+//---MAIN---------------------------------
+.main
+	overflow scroll
+	max-width 100%
+	overflow-x hidden
+.main img, .main__video
+	width 100%
+	background-color $c-l
+//---INFO---------------------------------
+.info__item, .news__item
+	margin $u-4x 0
+	border-bottom solid 1px $c-m
+	padding 0 0 $u-4x 0
+
+.main img, .main__video
+	width 100%
+	background-color $c-l
+//---MARQUEE------------------------------
+.marquee
+	position relative
+	width 100%
+	max-width 100%
+	height $u-4x
+	overflow-x hidden
+.track
+	position absolute
+	white-space nowrap
+	will-change transform
+	animation marquee 30s linear infinite
+@keyframes marquee
+	from
+		transform: translateX(0)
+	to
+		transform: translateX(-50%)
+//---MARQUEE------------------------------
+.summary__statement
+	display grid
+	margin $u-3x 0 $u 0
+.summary__info--detail
+	border-top solid 1px $c-m
+.summary__info--detail P
+	border-bottom solid 1px $c-m
+	padding-bottom $u-2x
+details summary::-webkit-details-marker 
+	display none
+summary
+	display flex
+	align-items center
+	margin $u-3x 0 0 0
+summary>p
+	max-width 80%
+details summary 
+	width 100%
+	position relative
+	cursor pointer
+	list-style none
+details summary:after 
+	content "+"
+	position absolute
+	right 0
+	font-size $f-xxl
+details[open] summary:after 
+	transform rotate(45deg)
+//---IMPORTS------------------------------
+@import 'modifiers'
+@import 'queries'
