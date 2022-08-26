@@ -1,8 +1,8 @@
 //---------------------------------------
-mixin sidebar__item(technique, name, year, img)
+mixin sidebar__item(media, name, year, img)
 	a.sidebar__item(href=img+'.html')
 		.sidebar__item--l
-			h5=technique
+			h5=media
 		.sidebar__item--c
 			.sidebar_item--img
 				picture#img--hide
@@ -14,10 +14,10 @@ mixin sidebar__item(technique, name, year, img)
 		.sidebar__item--r
 			h5=year
 //---------------------------------------
-mixin sidebar__item--en(technique, name, year, img)
+mixin sidebar__item--en(media, name, year, img)
 	a.sidebar__item(href=img+'--en.html')
 		.sidebar__item--l
-			h5=technique
+			h5=media
 		.sidebar__item--c
 			.sidebar_item--img
 				picture#img--hide
@@ -49,23 +49,23 @@ mixin marquee(text)
 			.content
 				h1.c-d=text
 //---------------------------------------
-mixin summary__info--detail(year, technique, materials, dimensions)
+mixin summary__info--detail(year, media, components, dimensions)
 	p.pb año: 
 		span=year
-	p.pb técnica: 
-		span=technique
-	p.pb materiales: 
-		span=materials
+	p.pb medio: 
+		span=media
+	p.pb componentes: 
+		span=components
 	p.pb dimensiones: 
 		span=dimensions
 //---------------------------------------
-mixin summary__info--detail--en(year, technique, materials, dimensions)
+mixin summary__info--detail--en(year, media, components, dimensions)
 	p.pb year: 
 		span=year
-	p.pb technique: 
-		span=technique
-	p.pb materials: 
-		span=materials
+	p.pb media: 
+		span=media
+	p.pb components: 
+		span=components
 	p.pb dimensions: 
 		span=dimensions
 //---------------------------------------
