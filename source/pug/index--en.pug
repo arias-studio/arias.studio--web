@@ -5,9 +5,11 @@ doctype html
 html(lang="en")
 	include __head.pug
 
-	body()
-		.wrapper__index
+	body(data-barba="wrapper")
+		.wrapper
 			include __sidebar--en.pug
+
+			main(data-barba="container" data-barba-namespace="home").main
 
 	//----------------------------------------
 	include __import-js.pug

@@ -1,0 +1,32 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar--en.pug
+			
+			main(data-barba="container" data-barba-namespace="home").main
+
+				details
+					summary.f-l.fw-b
+						p.f-l.fw-b BAJO LA MISMA LUNA
+					.summary__statement
+						p Two computer vision systems miss each other. They look for moons on the internet to reduce the poetic distance that separates them. With the Basics of Brute-Force Matcher algorithm they verify that both are under the same moon.
+						
+						.summary__info--detail
+							+summary__info--detail--en('2022', 'DIGITAL IMAGE', 'STOCK IMAGES, OPENCV, PYTHON', 'VARIABLE')
+
+				+main__img('cia_1', '1920', '1079')
+				+main__img('cia_2', '1920', '1079')
+				+main__img('cia_3', '1920', '1079')
+				+main__img('cia_4', '1920', '1079')
+
+				+main__back-menu--en()
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+	//----------------------------------------
+	include __import-js.pug

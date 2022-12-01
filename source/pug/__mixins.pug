@@ -29,6 +29,24 @@ mixin sidebar__item--en(media, name, year, img)
 		.sidebar__item--r
 			h5=year
 //---------------------------------------
+mixin main__back-menu--en()
+	a.sidebar__item.back-menu(href='index--en.html')
+		.sidebar__item--l
+			h1 →
+		.sidebar__item--c
+			h2.fw-b INDEX
+		.sidebar__item--r
+			h1 ←
+//---------------------------------------
+mixin main__back-menu()
+	a.sidebar__item.back-menu(href='index.html')
+		.sidebar__item--l
+			h1 →
+		.sidebar__item--c
+			h2.fw-b ÍNDICE
+		.sidebar__item--r
+			h1 ←
+//---------------------------------------
 mixin main__img(img, width, height)
 	picture
 

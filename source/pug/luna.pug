@@ -1,0 +1,31 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.wrapper
+			include __sidebar.pug
+			
+			main(data-barba="container" data-barba-namespace="home").main
+
+				details
+					summary.f-l.fw-b
+						p.f-l.fw-b BAJO LA MISMA LUNA
+					.summary__statement
+						p Dos sistemas de visión por computadora se extrañan mutuamente. Buscan lunas en internet para reducir la distancia poética que las separa. Con el algoritmo Basics of Brute-Force Matcher comprueban que ambas están bajo la misma luna.
+						
+						.summary__info--detail
+							+summary__info--detail('2022', 'IMAGEN DIGITAL', 'IMÁGENES DE STOCK, OPENCV, PYTHON', 'VARIABLE')
+
+				+main__img('luna_1', '1920', '1079')
+				+main__img('luna_2', '1920', '1079')
+				+main__img('luna_3', '1920', '1079')
+
+				+main__back-menu()
+
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+	//----------------------------------------
+	include __import-js.pug

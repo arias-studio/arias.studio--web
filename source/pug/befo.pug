@@ -5,11 +5,11 @@ doctype html
 html(lang="en")
 	include __head.pug
 
-	body()
+	body(data-barba="wrapper")
 		.wrapper
 			include __sidebar.pug
 			
-			main.main
+			main(data-barba="container" data-barba-namespace="home").main
 
 				details
 					summary.f-l.fw-b
@@ -24,6 +24,8 @@ html(lang="en")
 				+main__img('befo_2', '1620', '1080')
 				+main__img('befo_3', '1620', '1080')
 				+main__img('befo_4', '1620', '1080')
+
+				+main__back-menu()
 
 				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
 

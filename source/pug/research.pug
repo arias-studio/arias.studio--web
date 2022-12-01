@@ -5,10 +5,10 @@ doctype html
 html(lang="en")
 	include __head.pug
 
-	body()
+	body(data-barba="wrapper")
 		.wrapper
 			include __sidebar.pug
-			main.main
+			main(data-barba="container" data-barba-namespace="home").main
 
 				.news__item
 					h2 INVESTIGACIÓN 
@@ -38,6 +38,7 @@ html(lang="en")
 						h2 ARCHIVO FOTOGRÁFICO DE MOSQUERA
 						p Trabajo de grado de diseño gráfico. 2018.
 
+				+main__back-menu()
 
 				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
 

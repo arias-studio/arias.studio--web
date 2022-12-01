@@ -5,10 +5,10 @@ doctype html
 html(lang="en")
 	include __head.pug
 
-	body()
+	body(data-barba="wrapper")
 		.wrapper
 			include __sidebar.pug
-			main.main
+			main(data-barba="container" data-barba-namespace="home").main
 
 				.news__item
 					h2 NOTICIAS
@@ -52,6 +52,8 @@ html(lang="en")
 					a.f-l.fw-b(href="https://espacioodeon.com/wp-content/uploads/2020/01/O_hoja_sala_4_arte.pdf", target='_blank')
 						h2 QUE NO CUNDA EL PÁNICO (¿HAY OTRAS MANERAS?
 						p ( EXHIBICIÓN ) 15-01-2020 → 29-02-2020. ESPACIO ODEÓN. BOGOTÁ, COLOMBIA.
+
+				+main__back-menu()
 
 				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
 

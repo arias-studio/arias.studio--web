@@ -4,7 +4,7 @@
 		order 1
 	.sidebar
 		order 2
-	.sidebar, .main
+	.main
 		overflow visible
 	.main img, .main__video
 		margin $u 0
@@ -18,6 +18,8 @@
 	.info__item--text
 		width 100%
 	#img--hide
+		display none
+	.marquee
 		display none
 //---890 1023---------------------------
 @media(min-width: 890px)
@@ -34,10 +36,12 @@
 	.marquee
 		display none
 	.summary__statement
-			grid-template-columns 60% 1fr
-			gap $u-2x
+		grid-template-columns 60% 1fr
+		gap $u-2x
 	.info__item--text
 		max-width 80%
+	.back-menu
+		display none
 //---1024 1339---------------------------
 @media(min-width: 1024px)
 	.wrapper
