@@ -11,14 +11,8 @@ html(lang="en")
 			
 			main(data-barba="container" data-barba-namespace="home").main
 
-				details
-					summary.f-l.fw-b
-						p.f-l.fw-b CIUDAD SERPIENTE
-					.summary__statement
-						p CIUDAD SERPIENTE is a remixed version of "Bicentenario Ejército Nacional" of the National Army of Colombia.
-						
-						.summary__info--detail
-							+summary__info--detail--en('2021', 'SINGLE CHANNEL VIDEO', 'REMIXED VIDEO, REMIXED AUDIO, ALGORITHMIC TEXT', 'HD, 3:47 min')
+				.summary.f-l.fw-b
+					p.f-l.fw-b CIUDAD SERPIENTE
 
 				+main__img('serpiente_2', '1920', '1079')
 				+main__img('serpiente_3', '1920', '1079')
@@ -28,8 +22,11 @@ html(lang="en")
 				.main__video
 						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/738323506?h=3c8a2cf639&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ciudad Serpiente"></iframe></div>
 
+				.summary__statement
+					p CIUDAD SERPIENTE is a remixed version of "Bicentenario Ejército Nacional" of the National Army of Colombia.
+					.summary__info--detail
+						+summary__info--detail--en('2021', 'SINGLE CHANNEL VIDEO', 'REMIXED VIDEO, REMIXED AUDIO, ALGORITHMIC TEXT', 'HD, 3:47 min')
 				
-
 				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
 	//----------------------------------------
 	include __import-js.pug

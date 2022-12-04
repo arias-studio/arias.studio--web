@@ -11,16 +11,9 @@ html(lang="es")
 			
 			main(data-barba="container" data-barba-namespace="home").main
 
-				details
-					summary.f-l.fw-b
-						p.f-l.fw-b NATURAL BORN GLITCHER
-					.summary__statement
-						p Vídeo algorítmico para la pantalla de MediaLab Prado en el MMMAD Festival de Madrid.
-						
-						.summary__info--detail
-							+summary__info--detail('2021', 'VIDEO ALGORÍTMICO PARA SITIO ESPECÍFICO', 'SOFTWARE A LA MEDIDA, PANTALLA', '≈ 14,5 m × 9,4 m')
+				.summary.f-l.fw-b
+					p.f-l.fw-b NATURAL BORN GLITCHER
 
-				+main__img('glitcher_2', '1920', '1001')
 				+main__img('glitcher_3', '1920', '1001')
 				+main__img('glitcher_4', '1920', '1001')
 				+main__img('glitcher_5', '1920', '1001')
@@ -29,8 +22,11 @@ html(lang="es")
 				.main__video
 						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/742844001?h=43cac4c0a3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Natural Born Glitcher.mp4"></iframe></div>
 
+				.summary__statement
+					p Vídeo algorítmico para la pantalla de MediaLab Prado en el MMMAD Festival de Madrid.
+					.summary__info--detail
+						+summary__info--detail('2021', 'VIDEO ALGORÍTMICO PARA SITIO ESPECÍFICO', 'SOFTWARE A LA MEDIDA, PANTALLA', '≈ 14,5 m × 9,4 m')
 				
-
 				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
 	//----------------------------------------
 	include __import-js.pug

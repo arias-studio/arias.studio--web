@@ -13,12 +13,19 @@
 	.summary__statement
 		grid-template-columns 1fr
 		gap $u
-	details
+	details(open)
 		margin-bottom $u-2x
 	.info__item--text
 		width 100%
 	#img--hide
 		display none
+	.summary
+		margin-bottom $u
+		max-width 80%
+	.summary__statement
+		margin $u-3x 0 $u-3x 0
+	.link
+		margin-bottom $u
 //---890 1023---------------------------
 @media(min-width: 890px)
 	.wrapper
@@ -40,6 +47,13 @@
 		max-width 80%
 	.back-menu
 		display none
+	.summary__statement
+		margin $u-3x 0 $u-3x 0
+	.link
+		margin-top 0
+		margin-bottom 0
+	.main__video
+		margin-bottom $u-6x
 //---1024 1339---------------------------
 @media(min-width: 1024px)
 	.wrapper

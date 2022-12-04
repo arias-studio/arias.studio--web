@@ -172,7 +172,6 @@ h5
 //---MARQUEE------------------------------
 .summary__statement
 	display grid
-	margin $u-3x 0 $u 0
 .summary__info--detail
 	border-top solid 1px $c-m
 .summary__info--detail P
@@ -180,10 +179,10 @@ h5
 	padding-bottom $u-2x
 details summary::-webkit-details-marker 
 	display none
-summary
+.summary
 	display flex
 	align-items center
-	margin $u-3x 0 0 0
+	margin-top $u-3x
 summary>p
 	max-width 80%
 details summary 
@@ -191,13 +190,11 @@ details summary
 	position relative
 	cursor pointer
 	list-style none
-details summary:after 
-	content "+"
-	position absolute
-	right 0
-	font-size $f-xxl
-details[open] summary:after 
-	transform rotate(45deg)
+//---IMPORTS------------------------------
+.link
+	font-size $f-m
+	font-weight $fw-b
+	text-transform uppercase
 //---IMPORTS------------------------------
 @import 'modifiers'
 @import 'queries'
