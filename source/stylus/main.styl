@@ -123,19 +123,30 @@ h5
 	text-decoration-thickness 4px
 	width 100%
 	margin-bottom 4px
-// .scroll
-// 	display grid
-// 	grid-template-columns minmax(400px, 25vw)
-// 	position absolute
-// 	margin 0 $u-6x
-// 	width 100%
-// 	height 100%
-// 	align-content end
-// 	background-color yellow
-// .scroll > marquee
-// 	margin-right $u-6x
-// 	padding-bottom $u-2x
-// 	background-color $c-l
+.scroll
+	grid-template-columns minmax(400px, 25vw) 1fr
+	position fixed
+	align-items center
+	justify-content center
+	width 100%
+	bottom 0
+	z-index 100
+	padding 0 $u-6x
+	overflow hidden
+.scroll__marquee--item
+	display flex
+	animation scrolling 10s linear infinite
+.scroll__marquee
+	display flex
+	align-items center
+	justify-content center
+	background-color white
+	height 40px
+	margin-right $u-6x
+.scroll > marquee
+	margin-right $u-6x
+	padding-bottom $u-2x
+	background-color $c-l
 //---MAIN---------------------------------
 .main
 	overflow scroll
@@ -190,6 +201,9 @@ details summary
 	position relative
 	cursor pointer
 	list-style none
+//---IMPORTS------------------------------
+.blink {animation: blinker 1.5s linear infinite;}
+@keyframes blinker { 50% { opacity: 0; } }
 //---IMPORTS------------------------------
 .link
 	font-size $f-m

@@ -6,16 +6,19 @@ html(lang="es")
 	include __head.pug
 
 	body(data-barba="wrapper")
+		.scroll
+			.scroll__marquee
+				.f-s.fw-b.blink DESLICE PARA VER MÁS PROYECTOS
+
 		.wrapper
 			include __sidebar.pug
 			
 			main(data-barba="container" data-barba-namespace="home").main
-
 				.summary.f-l.fw-b
 					p.f-l.fw-b LOS AHOGADOS MÁS HERMOSOS DEL MUNDO
 				
 				a(href='https://losahogados.arias.studio/', target='_blank')
-					.link.pb-1 view live website ↗
+					.link.pb-1 ver sitio web ↗
 
 				+main__img('ahogados_1', '1920', '1280')
 				+main__img('ahogados_2', '1920', '1280')
