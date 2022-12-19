@@ -1,0 +1,34 @@
+include __mixins.pug
+include __version.pug
+//----------------------------------------
+doctype html
+html(lang="en")
+	include __head.pug
+
+	body(data-barba="wrapper")
+		.scroll
+			.scroll__marquee
+				.f-m.fw-b.blink SCROLL TO SEE MORE PROJECTS
+		.wrapper
+			include __sidebar--en.pug
+			
+			main(data-barba="container" data-barba-namespace="home").main
+
+				.summary.f-l.fw-b
+					p.f-l.fw-b MACHINES OF LOVING GRACE 3.0
+
+				+main__img('molg_1', '1920', '1080')
+				+main__img('molg_2', '1920', '1080')
+				
+				.main__video
+						<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/782321836?h=a05700f8f2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Machines of Loving Grace 3.0"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+				.summary__statement
+					p The piece has a diegetic character. It is related to an untold fiction and a possible future where intelligent machines control every aspect of our lives and privacy. With small poetic gestures, they question our humanity.A screen works like a digital mirror on which the poem All Watched Over by Machines of Loving Grace (Richard Brautigan, 1967) appears. The image resembles the effect produced on the glass of a bathroom by steam. The writing simulates human handwriting done with the finger.
+					.summary__info--detail
+						+summary__info--detail--en('2023', 'REACTIVE DIGITAL MIRROR', 'CUSTOM SOFTWARE, SCREEN 32", CAMERA 4K, COMPUTER', '≈ 73 × 42 × 3 cm, 6:45 min (in loop)')
+				
+				+marquee('INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ INDEX ↓ ')
+
+	//----------------------------------------
+	include __import-js.pug
