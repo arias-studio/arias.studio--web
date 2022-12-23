@@ -5,6 +5,11 @@ doctype html
 html(lang="es")
 	include __head.pug
 
+	style.
+		.sidebar__item:is(:link, :visited, :active).active
+			color $c-m !important
+			-webkit-tap-highlight-color rgba(0, 0, 0, 0)
+
 	body(data-barba="wrapper")
 		.scroll
 			.scroll__marquee

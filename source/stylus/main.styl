@@ -17,10 +17,11 @@ body
 	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
 ul
 	list-style none
-a:link, a:visited, a:active
-	text-decoration none
+nav a:is(:link, :visited, :active).active
+	color $c-d
 	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
 a
+	text-decoration none
 	color $c-m
 	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
 a:hover
@@ -71,6 +72,7 @@ h5
 //---SIDEBAR------------------------------
 .sidebar
 	overflow scroll
+	height 100%
 .sidebar__item
 	position relative
 	display grid
@@ -122,7 +124,7 @@ h5
 #logo
 	display block
 	text-decoration line-through
-	text-decoration-thickness 4px
+	text-decoration-thickness 6px
 	width 100%
 	margin-bottom 4px
 .scroll
