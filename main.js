@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.requestAnimationFrame(() => {
 
 	// Memorize Scroll Position Across Page Loads
 	let sidebar = document.querySelector(".sidebar");
@@ -19,8 +19,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		const navLinks = document.querySelectorAll('nav a').forEach(link => {
 			if (link.href === `${activePage}` || link.href === `${window.location.origin}${activePage}`) {
 				link.classList.add('active');
-				console.log(activePage);
-				console.log(link.href);
 			}
 		});
 	}
