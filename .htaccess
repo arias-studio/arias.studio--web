@@ -40,6 +40,9 @@ RewriteRule ^([^\.]+)$ $1.html [NC, L]
 # DirectoryIndex molg.html
 
 # ----------------------------------------------------------
+ErrorDocument 404 https://arias.studio/
+
+# ----------------------------------------------------------
 # DISABLE CACHING
 <IfModule mod_headers.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
