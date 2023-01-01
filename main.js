@@ -10,9 +10,6 @@ window.requestAnimationFrame(() => {
 		sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
 	});
 
-	// Initialize Quicklink
-	quicklink.listen();
-
 	// Mark Active Page in Navigation
 	const activePage = window.location.pathname;
 	if (activePage !== "") {
