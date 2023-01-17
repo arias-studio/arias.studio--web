@@ -24,7 +24,6 @@ a
 	text-decoration none
 	color $c-m
 	-webkit-tap-highlight-color rgba(0, 0, 0, 0)
-
 ::-webkit-scrollbar
 	width: 0px
 	background transparent
@@ -157,10 +156,17 @@ h5
 	width 100%
 	background-color $c-l
 //---INFO---------------------------------
-.info__item, .news__item
-	margin $u-4x 0
+.news__item, .info__item
+	position relative
+	display grid
+	gap $u-2x
 	border-bottom solid 1px $c-m
-	padding 0 0 $u-4x 0
+	padding $u-4x 0
+	line-height 100%
+.extrapadding
+	padding-bottom 17px !important
+.extrapadding__top
+	margin-top $u-3x !important
 .main img, .main__video
 	width 100%
 	background-color $c-l

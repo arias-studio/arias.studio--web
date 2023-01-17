@@ -1,6 +1,6 @@
 //---------------------------------------
 mixin sidebar__item(media, name, year, img)
-	a.sidebar__item(href=img+'.html')
+	a.sidebar__item.stride(href=img+'.html')
 		.sidebar__item--l
 			h5=media
 		.sidebar__item--c
@@ -15,7 +15,7 @@ mixin sidebar__item(media, name, year, img)
 			h5=year
 //---------------------------------------
 mixin sidebar__item--en(media, name, year, img)
-	a.sidebar__item(href=img+'--en.html')
+	a.sidebar__item.stride(href=img+'--en.html')
 		.sidebar__item--l
 			h5=media
 		.sidebar__item--c
@@ -45,6 +45,11 @@ mixin main__img(img, width, height)
 //---------------------------------------
 mixin marquee(text)
 	.marquee
+		.track
+			.content
+				p.f-xl.fw-b.c-d=text
+mixin marquee__info(text)
+	.marquee.extrapadding__top
 		.track
 			.content
 				p.f-xl.fw-b.c-d=text
